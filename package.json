@@ -1,23 +1,22 @@
 {
-  "name": "hyper-one-light",
-  "version": "1.1.1",
-  "description": "Atom One Light theme for Hyper",
+  "name": "hyper-one-dark",
+  "version": "1.0.0",
+  "description": "Atom One Dark theme for Hyper",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrepolischuk/hyper-one-light.git"
+    "url": "git+https://github.com/tillkruss/hyper-one-dark.git"
   },
   "keywords": [
     "hyper",
     "hyper-theme"
   ],
-  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrepolischuk/hyper-one-light/issues"
+    "url": "https://github.com/tillkruss/hyper-one-dark/issues"
   },
-  "homepage": "https://github.com/andrepolischuk/hyper-one-light"
+  "homepage": "https://github.com/tillkruss/hyper-one-dark"
 }
