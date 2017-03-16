@@ -1,22 +1,23 @@
 'use strict';
-const foregroundColor = '#383a42';
-const red = '#e45649';
-const green = '#50a14f';
-const yellow = '#c18401';
-const blue = '#4078f2';
-const magenta = '#a626a4';
-const cyan = '#0184bc';
-const white = '#a0a1a7';
-const lightBlack = '#696c77';
+
+const foregroundColor = '#abb2bf';
+const red = '#e06c75';
+const green = '#98c379';
+const yellow = '#e5c07b';
+const blue = '#61afef';
+const magenta = '#c678dd';
+const cyan = '#56b6c2';
+const white = '#d7dae0';
+const lightBlack = '#5c6370';
 
 exports.decorateConfig = config => {
-  const backgroundColor = config.enableVibrancy ? 'transparent' : '#fafafa';
+  const backgroundColor = config.enableVibrancy ? 'transparent' : '#282c34';
 
   const decoratedConfig = Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
     borderColor: 'transparent',
-    cursorColor: '#526eff',
+    cursorColor: '#528bff',
     colors: {
       black: foregroundColor,
       red,
@@ -61,8 +62,8 @@ exports.decorateConfig = config => {
         border-bottom: 1px solid rgba(0, 0, 0, .12);
       }
       .tab_tab {
-        color: rgba(0, 0, 0, .3) !important;
-        background-color: rgba(50, 50, 50, .09) !important;
+        color: rgba(157, 165, 180, 0.6) !important;
+        background-color: #21252b !important;
         border-color: rgba(0, 0, 0, .12) !important;
       }
       .tab_tab.tab_active {
@@ -91,7 +92,7 @@ exports.decorateConfig = config => {
         transition-duration: .32s;
       }
       .tabs_title, .tab_icon, .tab_tab.tab_active {
-        color: rgba(0, 0, 0, .57) !important;
+        color: #d7dae0 !important;
       }
       .tab_tab.tab_hasActivity {
         color: ${blue} !important;
@@ -113,7 +114,7 @@ exports.decorateConfig = config => {
 
   exports.onWindow = browserWindow => {
     if (config.enableVibrancy === true) {
-      browserWindow.setVibrancy('light');
+      browserWindow.setVibrancy('dark');
     }
   };
 
